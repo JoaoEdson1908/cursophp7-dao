@@ -26,13 +26,15 @@
 	//$aluno->insert();
 	//echo $aluno;
 
-//Update
+//Alterar um usuario
+	//$usuario = new Usuario();
+	//$usuario->loadById(13);
+	//$usuario->update("professor", "!@#$641");
+	//echo $usuario;
+
+//Apagar um usuario
 	$usuario = new Usuario();
-
-	$usuario->loadById(13);
-
-	$usuario->update("professor", "!@#$641");
-
+	$usuario->loadById(15);
+	$usuario->delete();
 	echo $usuario;
-
 ?> 
