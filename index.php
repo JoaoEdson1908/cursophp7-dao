@@ -16,8 +16,23 @@
 	//echo json_encode($search);
 
 //Carregando usuario autenticado
-	$usuarios = new Usuario();
-	$usuarios->login("test", "123456");
+	//$usuarios = new Usuario();
+	//$usuarios->login("test", "123456");
 
-	echo $usuarios;
- ?> 
+	//echo $usuarios;
+
+//Criando um novo usuario
+	//$aluno = new Usuario("aluno", "@lun0");
+	//$aluno->insert();
+	//echo $aluno;
+
+//Update
+	$usuario = new Usuario();
+
+	$usuario->loadById(13);
+
+	$usuario->update("professor", "!@#$641");
+
+	echo $usuario;
+
+?> 
